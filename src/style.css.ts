@@ -13,33 +13,32 @@ const container = style({
   padding: '1rem',
   flexDirection: 'column',
   gap: '1rem',
-});
-
-const box = style({
-  display: 'flex',
-  padding: '1rem',
-  flexDirection: 'column',
-  gap: '1rem',
-  borderRadius: '1rem',
-  backgroundColor: '#F3F4F5',
-});
-
-const row = style({
-  display: 'flex',
+  textAlign: 'center',
+  justifyContent: 'center',
   alignItems: 'center',
-  justifyContent: 'space-between',
 });
 
-const switchItem = style({});
+const iconBox = style({
+  width: '80px',
+  height: '80px',
+  borderRadius: '28px',
+  backgroundColor: '#F2F3F5',
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  marginTop: '9rem',
+});
 
-globalStyle(`${switchItem} > span > span:first-child`, {
-  fontWeight: 500,
+const icon = style({});
+
+globalStyle(`${icon} > svg`, {
+  width: '48px',
+  height: '48px',
 });
 
 export const appSt = {
   bottomBtn,
   container,
-  box,
-  row,
-  switchItem,
+  iconBox,
+  icon,
 };
